@@ -69,8 +69,7 @@ public class Display extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(Display.this,MainActivity.class);
-                startActivity(intent);
+                setResult(RESULT_OK,intent);
                 finish();
             }
         });
